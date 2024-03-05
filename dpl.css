@@ -1,0 +1,437 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#sidebar {
+    width: 220px;
+    background-color: #ffffff;
+    color: #949393;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #343c6a;
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+
+.logo i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.icon h3,
+.logo h1 {
+    margin: 0;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: #343c6a;
+    transition: color 0.3s, margin-left 0.3s;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.icon:hover {
+    color: #1a16f3;
+    margin-left: 12px;
+}
+
+.icon i {
+    font-size: 20px;
+    margin-right: 17px;
+    transition: color 0.3s ease;
+}
+
+.icon:hover i {
+    color: #1a16f3;
+}
+
+.icon.selected {
+    background-color: #ffffff;
+    color: #1a16f3;
+}
+
+.icon.selected::before {
+    font-size: 18px;
+    margin-right: 10px;
+    position: absolute;
+}
+
+.icon.selected:hover {
+    color: #1a16f3;
+    margin-left: 12px;
+}
+
+.icon:not(.selected):hover {
+    color: #1a16f3;
+    margin-left: 12px;
+}
+
+#main-content {
+    flex: 1;
+    padding: 0px;
+    margin-left: 1px;
+    background-color: #f5f7fa;
+}
+
+header {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2px;
+}
+
+header h1 {
+    color: #343c6a;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f7fa;
+    border-radius: 24px;
+    padding: 5px 10px;
+    margin-right: -5px;
+    width: 300px;
+}
+
+.search-bar input[type="text"] {
+    background-color: #f5f7fa;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.iconss {
+    display: flex;
+    align-items: center;
+}
+
+.iconss i {
+    border-radius: 50%;
+    border: 13px solid #f5f7fa;
+    cursor: pointer;
+    margin-right: 40px;
+    font-size: 24px;
+}
+
+.user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.Noinvesticon,
+.Rateinvesticon,
+.investicon {
+    display: flex;
+    align-items: center;
+}
+
+.investicon i {
+    border-radius: 50%;
+    border: 20px solid #dcfaf8;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.Noinvesticon i {
+    border: 20px solid #ffe0eb;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.Rateinvesticon i {
+    border: 20px solid #e7edff;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.column {
+    flex: 1;
+    margin-right: 1px;
+    margin-left: 20px;
+}
+
+.chart {
+    display: flex;
+    width: 89%;
+    height: 90px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.abc {
+    margin-top: 20px;
+}
+
+.top {
+    font-size: small;
+    color: #b8c7df;
+    margin-bottom: -11px;
+}
+
+.srow {
+    display: flex;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+.chartdiv {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.chartt {
+    display: flex;
+    width: 95%;
+    height: 260px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.mid {
+    display: flex;
+}
+
+.midheading {
+    margin-left: 35px;
+    margin-right: 300px;
+    color: #343c6a;
+}
+
+#contact-form {
+    margin-top: 20px;
+}
+
+.cform {
+    display: flex;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+.chartdivv {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.contform {
+    width: 95%;
+    margin: 0 auto;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+label {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.formin {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #dfeaf2;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.midheading2 {
+    margin-left: 45px;
+    margin-right: 20px;
+    color: #343c6a;
+}
+
+.midheading2 + .midheading2 {
+    margin-left: 470px;
+}
+
+input[type="submit"] {
+    background-color: #1814f3;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 22rem;
+    width: 100px;
+}
+
+.chartt1 {
+    width: 75%;
+    margin: 0 auto;
+    height: 270px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+table {
+    margin-left: 15px;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+th,
+td {
+    padding: 6px;
+    text-align: center;
+    font-size: small;
+}
+
+th {
+    color: #94aacf;
+}
+
+@media screen and (max-width: 1024px) and (max-height: 752px) and (min-width: 320px) and (min-height: 564px) {
+    .contform {
+        width: 75%;
+    }
+    .chartt{
+        height:173px
+    }
+
+    input[type="submit"] {
+        background-color: #1814f3;
+        color: #fff;
+        cursor: pointer;
+        margin-left: 10rem;
+        width: 100px;
+    }
+    .chartdivv{
+        margin-right: -4px;
+        margin-left: -34px;
+    }
+
+    .midheading2 + .midheading2 {
+        margin-left: 223px;
+    }
+    .midheading{
+        margin-right: 135px;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+}
+
+@media screen and (width: 1440px) and (height: 1128px) {
+    .midheading {
+        margin-right: 337px;
+    }
+
+    .midheading2 + .midheading2 {
+        margin-left: 505px;
+    }
+}
+
+@media screen and (width: 1542px) and (height: 1128px) {
+    .midheading2 + .midheading2 {
+        margin-left: 605px;
+    }
+
+    .midheading {
+        margin-right: 388px;
+    }
+
+    .chartt1 {
+        width: 59%;
+    }
+}
+
+@media screen and (width: 2560px) and (height: 1880px) {
+    .midheading {
+        margin-right: 911px;
+        margin-left: 49px;
+    }
+
+    .chartt {
+        width: 80%;
+        height: 380px;
+    }
+
+    .midheading2 + .midheading2 {
+        margin-left: 1272px;
+    }
+    .midheading2{
+        margin-left: 60px;
+    }
+
+    .chartt1 {
+        width: 48%;
+    }
+
+    input[type="submit"] {
+        margin-left: 56rem;
+    }
+
+    .srow {
+        margin-left: 24px;
+    }
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px 0;
+    box-shadow: 0px 5px 0px #dedede;
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #555;
+  }
+  

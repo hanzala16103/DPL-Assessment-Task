@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Dashboard</title>
+  <link rel="stylesheet" href="dpl.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="graph.js"></script>
+  <script src="validation.js"></script>
+</head>
+<body>
+    <div id="sidebar">
+        <div class="logo">
+          <i class="fas fa-address-card"></i>
+          <h1>BDash.</h1>
+        </div>
+        <button class="icon" id="dashboard" onclick="handleButtonClick('dashboard')">
+            <i class="fas fa-home"></i>
+            <h3>Dashboard</h3>
+        </button>
+        <button class="icon" id="transactions" onclick="handleButtonClick('transactions')">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <h3>Transactions</h3>
+        </button>
+        
+        <button class="icon" id="accounts" onclick="handleButtonClick('accounts')">
+            <i class="fas fa-user"></i>
+            <h3>Accounts</h3>
+        </button>
+        
+        <button class="icon" id="investments" onclick="handleButtonClick('investments')">
+            <i class="fas fa-chart-bar"></i>
+            <h3>Investments</h3>
+        </button>
+        
+        <button class="icon" id="credit-cards" onclick="handleButtonClick('credit-cards')">
+            <i class="fas fa-credit-card"></i>
+            <h3>Credit Cards</h3>
+        </button>
+        
+        <button class="icon" id="loans" onclick="handleButtonClick('loans')">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3>Loans</h3>
+        </button>
+        
+        <button class="icon" id="services" onclick="handleButtonClick('services')">
+            <i class="fas fa-screwdriver"></i>
+            <h3>Services</h3>
+        </button>
+        
+        <button class="icon" id="my-privileges" onclick="handleButtonClick('my-privileges')">
+            <i class="fas fa-lightbulb"></i>
+            <h3>My Privileges</h3>
+        </button>
+        
+        <button class="icon" id="setting" onclick="handleButtonClick('setting')">
+            <i class="fas fa-cog"></i>
+            <h3>Setting</h3>
+        </button>
+      </div>
+  <div id="main-content">
+    <header>
+        <h1>Investments</h1>
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search for something">
+        </div>
+        <div class="iconss">
+            <i class="fas fa-cog" style="color: #74C0FC;"></i>
+            <i class="fas fa-bell" style="color: #ff4797;"></i>
+          <img src="han.jpg" alt="User" class="user-img">
+        </div>
+      </header>
+    <div class="row">
+      <div class="column">
+        <div class="chart">
+            <div class="investicon">
+                    <i class="fas fa-money-bill-wave" style="color: #63E6BE;"></i>
+            </div>
+            <div class="abc">
+                <div class="top">Total invested amount</div>
+                <h3>$150,000</h3>
+            </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="chart">
+            <div class="Noinvesticon">
+                <i class="fas fa-dollar-sign" style="color: #ff82ac;"></i>
+            </div>
+            <div class="abc">
+                <div class="top">No. of investments</div>
+                <h3>1250</h3>
+            </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="chart">
+            <div class="Rateinvesticon">
+                <i class="fas fa-reply-all" style="color: #396aff;"></i>
+            </div>
+            <div class="abc">
+                <div class="top">Rate of Return</div>
+                <h3>+5.80%</h3>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="mid">
+        <h3 class="midheading">Debit & Credit Overview</h3>
+        <h3 class="midheading">Monthly Revenue</h3>
+    </div>
+    <div class="srow">
+      <div class="chartdiv">
+        <div class="chartt">
+            <canvas id="myChart" width="620" height="300"></canvas>
+        </div>
+      </div>
+      <div class="chartdiv">
+        <div class="chartt">
+            <canvas id="myChart2" width="620" height="300"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="mid">
+        <h3 class="midheading2">Contact Form</h3>
+        <h3 class="midheading2">Trending Stock</h3>
+    </div>
+    <div class="cform">
+        <div class="chartdivv">
+          <div class="contform">
+                <form onsubmit="return validateForm()">
+                  <label for="Email">Email</label>
+                  <input class="formin" type="text" id="email" name="firstname" placeholder="Email">
+                  <label for="name">Name on Card</label>
+                  <input class="formin" type="text" id="name" name="lastname" placeholder="Name..">
+                  <input class="formin"type="submit" value="Submit">
+                </form>
+          </div>
+        </div>
+        <div class="chartdivv">
+          <div class="chartt1">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SL No</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Return</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Trivago</td>
+                        <td>$520</td>
+                        <td style="color:#16dbaa;">+5%</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Canon</td>
+                        <td>$480</td>
+                        <td style="color:#16dbaa;">+10%</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Uber Food</td>
+                        <td>$350</td>
+                        <td style="color:#fe5c73;">-3%</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>Nokia</td>
+                        <td>$940</td>
+                        <td style="color:#16dbaa;">+2%</td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>Tiktok</td>
+                        <td>$670</td>
+                        <td style="color:#fe5c73;">-12%</td>
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td>NAS</td>
+                        <td>$550</td>
+                        <td style="color:#16dbaa;">10%</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
